@@ -1,0 +1,108 @@
+/* Styles précédents */
+body {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    scroll-behavior: smooth;
+}
+header {
+    text-align: center;
+    padding: 5px 0; /* Réduire la marge haut et bas */
+    margin-bottom: 5px; /* Réduire la marge bas */
+    background-color: rgba(255, 192, 203, 0.5);
+    color: #333;
+    cursor: pointer;
+}
+header h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    position: relative;
+}
+header span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    color: #000;
+    animation: reveal 2s ease forwards;
+}
+
+@keyframes reveal {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #000;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.social-icon {
+    font-size: 15px;
+    margin-right: 10px;
+}
+.social-info {
+    font-size: 10px;
+    color: #333;
+}
+.btn-facebook {
+    background-color: #ffa8f8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.btn-facebook:hover {
+    background-color: #ffa6ff;
+    transform: scale(1.05);
+}
+/* Nouveaux styles pour le carrousel */
+.carousel-inner img {
+    margin: auto; /* Centrer les images horizontalement */
+}
+/* Nouveaux styles pour les appareils mobiles */
+@media (max-width: 576px) {
+    header {
+        padding: 20px 0; /* Réduire l'espace de la zone d'en-tête sur les petits écrans */
+    }
+    .btn {
+        margin: 10px auto; /* Centrer le bouton sur les petits écrans */
+    }
+    .scroll-img {
+        max-width: 50%; /* Réduire la taille de l'image de défilement sur les petits écrans */
+        display: block; /* Assurer que l'image est centrée */
+        margin: auto; /* Centrer l'image horizontalement */
+    }
+}
+footer {
+    background-color: #ffa8f8; /* Couleur rose */
+    padding: 10px 0; /* Réduire la marge haut et bas */
+    text-align: center;
+    color: #333;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+}
+footer p {
+    font-size: 12px;
+}
+footer a {
+    color: #333;
+    margin:5px;
+}
